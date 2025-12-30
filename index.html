@@ -3,9 +3,82 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>nu-mining</title>
+  <link rel="icon" type="image/svg+xml"
+    href="https://res.cloudinary.com/dzhxwku5k/image/upload/g_auto,c_fill,w_16,h_16/f_auto,q_auto/IMG-20251229-WA0001_hui11y.svg" />
+  <title>NU Mining | The Future of Mineral Infrastructure</title>
+  <meta name="description"
+    content="A unified high-performance ecosystem for mining, acquisition, and geological consulting. Designed for transparency and global scale." />
+
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://numining.com.ng/#organization",
+            "name": "NU Mining Engineering Resources LTD",
+            "url": "https://numining.com.ng",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://res.cloudinary.com/dzhxwku5k/image/upload/v1767069082/IMG-20251229-WA0001_hui11y.jpg",
+              "width": 1080,
+              "height": 1051
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+234-706-078-3505",
+                "contactType": "customer service",
+                "areaServed": "NG",
+                "availableLanguage": ["English"]
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://numining.com.ng/#website",
+            "url": "https://numining.com.ng",
+            "name": "NU Mining",
+            "publisher": {
+              "@id": "https://numining.com.ng/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://numining.com.ng/#webpage",
+            "url": "https://numining.com.ng",
+            "name": "NU Mining | The Future of Mineral Infrastructure",
+            "description": "A unified high-performance ecosystem for mining, acquisition, and geological consulting. Designed for transparency and global scale.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://numining.com.ng/#website"
+            },
+            "about": {
+              "@id": "https://numining.com.ng/#organization"
+            },
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://www.numining.com.ng/"
+                }
+              ]
+            }
+          },
+        ]
+      }
+      </script>
+
+  <meta property="og:image:width" content="1080" />
+  <meta property="og:image:height" content="1051" />
+  <meta property="og:image:alt" content="NU Mining" />
+  <meta property="og:image"
+    content="https://res.cloudinary.com/dzhxwku5k/image/upload/v1767069082/IMG-20251229-WA0001_hui11y.jpg" />
+
   <link rel="stylesheet" href="/src/assets/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +118,7 @@
             </p>
 
 
-            <a href="//thisisbooluw.website"
+            <a href="tel:+2348136884691" target="_blank"
               class="inline-block mt-5 rounded bg-secondary text-white transition-all ease-in capitalize font-semibold">
               <span class="inline-block py-3 px-7 bg-primary/50 border border-primary/50 rounded">
                 make enquiry
@@ -307,9 +380,29 @@
     </section>
   </div>
 
-  <footer class="section-background py-24">
-    Footer
+  <footer class="section-background py-24 flex flex-col items-center justify-center text-white">
+    <div class="w-full md:w-300 max-sm:px-5">
+      <img
+        src="https://res.cloudinary.com/dzhxwku5k/image/upload/w_100,h_100/f_auto,q_auto/IMG-20251229-WA0001_hui11y.webp"
+        alt="Logo of NU Mining Engineering Resources LTD" class="h-14 rounded-full grayscale" />
+      <div class="mt-5 uppercase text-sm flex flex-col lg:flex-row gap-y-10 justify-between">
+        <div class="flex flex-col lg:flex-row gap-4">
+          <span>
+            &copy; Copyright <span id="copyright_year"></span>, All Rights Reserved
+          </span>
+          <span class="inline-block lg:px-4 lg:border-l lg:border-gray-50/30">
+            NU Mining Engineering Resources LTD (RC 7166302)
+          </span>
+        </div>
+        <a href="//beawesome.page" target="_blank"
+          class="cursor-pointer font-bold opacity-50 hover:opacity-100 ease-in-out lowercase">
+          awwpa
+        </a>
+      </div>
+    </div>
   </footer>
+
+  <script src="/src/main.ts"></script>
 </body>
 
 </html>
