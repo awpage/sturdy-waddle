@@ -87,11 +87,10 @@
     rel="stylesheet">
 </head>
 
-<body class="flex flex-col justify-between h-screen relative">
+<body class="flex flex-col justify-between h-screen relative overflow-x-hidden">
   <div class="grid-background"></div>
   <div class="">
-    <header
-      class="sticky top-0 z-999 bg-white py-5 border-b border-border flex items-center justify-center max-sm:px-5">
+    <header class="sticky top-0 z-999 bg-white py-5 flex items-center justify-center max-sm:px-5">
       <nav class="w-300 flex items-center gap-3">
         <img
           src="https://res.cloudinary.com/dzhxwku5k/image/upload/w_50,h_50/f_auto,q_auto/IMG-20251229-WA0001_hui11y.webp"
@@ -104,8 +103,8 @@
       </nav>
     </header>
     <section class="flex flex-col items-center justify-center">
-      <main class="w-full flex flex-col items-center justify-center text-leading">
-        <div class="max-sm:px-5 md:w-300 pt-28 pb-52 md:py-46 relative flex max-sm:flex-col overflow-hidden">
+      <main class="relative overflow-hidden w-full flex flex-col items-center justify-center text-leading">
+        <div class="max-sm:px-5 pt-28 pb-52 md:py-46 relative flex max-sm:flex-col overflow-y-hidden">
           <section class="md:w-2/3 justify-self-start">
             <h1 class="text-5xl md:text-6xl font-bold">
               The Future of Mineral Infrastructure
@@ -125,33 +124,47 @@
               </span>
             </a>
           </section>
-
+        </div>
+        <div class="w-full md:w-300 grid">
+          <div
+            class="max-sm:hidden absolute top-0 right-0 w-[38vw] p-20 bg-linear-to-b from-white to-white/5 via-white/50 z-9">
+          </div>
           <section
-            class="absolute -bottom-10 md:bottom-5 right-0 md:-right-10 left-0 md:left-[80vh] pt-10 grid gap-5 md:gap-0 grid-cols-4 md:grid-cols-2">
-            <div class="max-sm:w-40 md:h-75 mt-5 md:mt-28 md:ml-10 border-6 border-border/50 bg-border rounded">
+            class="w-full md:w-[20vw] absolute max-sm:-bottom-2 md:top-0 md:right-72 pt-10 grid gap-5 scroller overflow-hidden">
+            <div class="scroller__main">
               <img
                 src="https://res.cloudinary.com/dzhxwku5k/image/upload/g_auto,c_fill/f_auto,q_auto/photo-1764422743505-97c9ea0e43f2_xcygk2.webp"
-                alt="Image of a mining underground" class="w-auto h-full rounded-sm" />
-            </div>
-            <div
-              class="max-sm:w-40 md:h-75 transform rotate-12 mt-16 md:mt-32 border-6 border-border/50 bg-border rounded">
+                alt="Image of a mining underground" class="w-full h-full rounded-xl" />
               <img
                 src="https://res.cloudinary.com/dzhxwku5k/image/upload/g_auto,c_fill/f_auto,q_auto/IMG-20251226-WA0020_maubjk.webp"
-                alt="Image of a mining underground" class="w-auto h-full rounded-sm" />
-            </div>
-            <div
-              class="max-sm:w-40 md:h-75 transform -rotate-12 mt-10 md:mt-0 md:ml-10 border-6 border-border/50 bg-border rounded">
+                alt="Image of a mining underground" class="w-full h-full rounded-xl" />
               <img
                 src="https://res.cloudinary.com/dzhxwku5k/image/upload/g_auto,c_fill/f_auto,q_auto/photo-1760651691853-cbb731524f2a_hrcdgg.webp"
-                alt="Image of a mining underground" class="w-auto h-full rounded-sm" />
-            </div>
-
-            <div class="max-sm:w-40 md:h-75 mt-16 md:mt-5 border-6 border-border/50 bg-border rounded">
+                alt="Image of a mining underground" class="w-full h-full rounded-xl" />
               <img
                 src="https://res.cloudinary.com/dzhxwku5k/image/upload/g_auto,c_fill/f_auto,q_auto/IMG-20251226-WA0019_mbmpzf.webp"
-                alt="Image of a mining underground" class="w-auto h-full rounded-sm" />
+                alt="Image of a mining underground" class="w-full h-full rounded-xl" />
             </div>
           </section>
+          <section class="max-md:hidden ``w-full md:w-[20vw] absolute top-0 md:-right-20 -pt-20 grid gap-5 scroller">
+            <div class="scroller__sub">
+              <img
+                src="https://res.cloudinary.com/dzhxwku5k/image/upload/g_auto,c_fill/f_auto,q_auto/IMG-20251226-WA0019_mbmpzf.webp"
+                alt="Image of a mining underground" class="w-full h-auto rounded-xl" />
+              <img
+                src="https://res.cloudinary.com/dzhxwku5k/image/upload/g_auto,c_fill/f_auto,q_auto/photo-1760651691853-cbb731524f2a_hrcdgg.webp"
+                alt="Image of a mining underground" class="w-full h-auto rounded-xl" />
+              <img
+                src="https://res.cloudinary.com/dzhxwku5k/image/upload/g_auto,c_fill/f_auto,q_auto/IMG-20251226-WA0020_maubjk.webp"
+                alt="Image of a mining underground" class="w-full h-auto rounded-xl" />
+              <img
+                src="https://res.cloudinary.com/dzhxwku5k/image/upload/g_auto,c_fill/f_auto,q_auto/photo-1764422743505-97c9ea0e43f2_xcygk2.webp"
+                alt="Image of a mining underground" class="w-full h-auto rounded-xl" />
+            </div>
+          </section>
+          <div
+            class="max-sm:hidden absolute bottom-0 right-0 w-[38vw] p-20 bg-linear-to-t from-white to-white/5 via-white/50 z-9">
+          </div>
         </div>
       </main>
     </section>
@@ -255,7 +268,7 @@
 
     <section class="flex flex-col items-center justify-center bg-white text-leading">
       <section
-        class="max-sm:px-5 w-full md:w-300 py-20 min-h-[50vh] grid grid-cols-1 gap-5 md:grid-cols-3 md:grid-rows-2">
+        class="max-sm:px-5 w-full md:w-300 pt-20 min-h-[50vh] grid grid-cols-1 gap-5 md:grid-cols-3 md:grid-rows-2">
         <div class="pt-5">
           <h2 class="text-4xl md:text-5xl font-bold">
             Services
@@ -332,6 +345,39 @@
           </div>
         </div>
       </section>
+      <section class="max-sm:px-5 w-full md:w-300 mt-5 mb-20">
+        <div class="bg-gray-100 p-5 rounded flex flex-col md:flex-row gap-3 items-start">
+          <svg viewBox="0 0 32 32" class="fill-primary w-10 shrink-0">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M 16 3 C 8.832 3 3 8.832 3 16 C 3 23.168 8.832 29 16 29 C 23.168 29 29 23.168 29 16 C 29 8.832 23.168 3 16 3 z M 16 5 C 16.338 5 16.67 5.0207813 17 5.0507812 L 17 7 L 15 7 L 14 10 L 13 10 L 13 11 L 18 11 L 19 12 L 20 12 L 20 13 L 19 14 L 15 13 L 11 16 L 11 19 L 13 21 L 16 21 L 16 23.5 L 17 26 L 18 26 L 21 22 L 21 21 L 22 19 L 22 18 L 21 18 L 20 16 L 21 15 L 22.5 16 L 25 15 L 25 14 L 26.808594 14 C 26.928594 14.65 27 15.316 27 16 C 27 22.065 22.065 27 16 27 C 9.935 27 5 22.065 5 16 C 5 9.935 9.935 5 16 5 z">
+              </path>
+            </g>
+          </svg>
+          <div class="md:w-[60%]">
+            <h3 class="text-2xl">Global Logistics & Mineral Export</h3>
+            <p class="">
+              We specialize in the cross-border movement of high-demand earth resources, ensuring rigorous compliance
+              and secure
+              transit. Our export portfolio spans two critical categories:
+            </p>
+            <div class="mt-2 md:flex gap-5">
+              <div class="">
+                <b>Investment-Grade Gemstones:</b> Expertly handled shipments of Ruby, Aquamarine, Emerald, and
+                Amethyst, maintained under
+                high-security protocols to preserve clarity and value.
+              </div>
+              <div class="">
+                <b>Base & Industrial Ores:</b> Large-scale supply chain solutions for the bulk exportation of Zinc,
+                Lead, and Bauxite,
+                connecting primary extraction sites to international smelting and manufacturing hubs.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
   </div>
 
@@ -372,9 +418,9 @@
         <h3 class="text-xl md:text-2xl">Abuja Office</h3>
 
         <p class="">
-          No. 20B Sylvester Tyoshar Close, <br />
-          Dawaki, Bwari Area Council<br />
-          FCT - Abuja, Nigeria.
+          Dutsepe International Market, <br />
+          Beside Mopol 50, Army Housing Scheme, <br />
+          Kubwa - Abuja, Nigeria.
         </p>
       </div>
     </section>
@@ -386,11 +432,11 @@
         src="https://res.cloudinary.com/dzhxwku5k/image/upload/w_100,h_100/f_auto,q_auto/IMG-20251229-WA0001_hui11y.webp"
         alt="Logo of NU Mining Engineering Resources LTD" class="h-14 rounded-full grayscale" />
       <div class="mt-5 uppercase text-sm flex flex-col lg:flex-row gap-y-10 justify-between">
-        <div class="flex flex-col lg:flex-row gap-4">
+        <div class="flex flex-col gap-4">
           <span>
             &copy; Copyright <span id="copyright_year"></span>, All Rights Reserved
           </span>
-          <span class="inline-block lg:px-4 lg:border-l lg:border-gray-50/30">
+          <span class="inline-block">
             NU Mining Engineering Resources LTD (RC 7166302)
           </span>
         </div>
